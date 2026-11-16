@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aurora Flores – Decoração floral para casamentos e eventos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf5f4;--surface:#fff;--ink:#23302a;--muted:#5d6b63;--leaf:#24493a;--on-leaf:#fff;--peony:#c4577a;--blush:#f6d9de;--line:#ecd9db;--sage:#dfeadf;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16201b;--surface:#1e2b24;--ink:#f3e8e8;--muted:#a9b8ae;--leaf:#9fd0b0;--on-leaf:#12201a;--peony:#ee95ae;--blush:#3a2530;--line:#2f4037;--sage:#25382d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#16201b;--surface:#1e2b24;--ink:#f3e8e8;--muted:#a9b8ae;--leaf:#9fd0b0;--on-leaf:#12201a;--peony:#ee95ae;--blush:#3a2530;--line:#2f4037;--sage:#25382d;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 Jost,system-ui,sans-serif}
+h1,h2,h3,.brand{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;margin:0}
+h1{font-size:clamp(2.3rem,6vw,4.2rem)}h2{font-size:1.8rem;margin-bottom:.6rem}h3{font-size:1.3rem}
+a{color:var(--leaf)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:24px;padding:14px 20px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-size:1.7rem;font-style:italic;text-decoration:none;color:var(--ink)}
+.brand svg{width:34px;height:34px}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav a{padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--ink)}
+nav a:hover{background:var(--blush)}
+nav a[aria-current]{background:var(--leaf);color:var(--on-leaf)}
+.badge{display:inline-block;min-width:1.4em;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--peony);color:#fff;font-size:.8rem;text-align:center}
+.badge:empty{display:none}
+main{padding:36px 0 60px;min-height:70vh}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.hero p{font-size:1.15rem;max-width:34em;color:var(--muted)}
+.hero svg{width:100%;height:auto;max-width:440px;margin:0 auto;display:block;overflow:visible}
+.pt{transform-box:fill-box;transform-origin:50% 100%;animation:open .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes open{from{transform:scale(.15);opacity:0}}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;border:0;border-radius:999px;padding:11px 22px;background:var(--leaf);color:var(--on-leaf);font:500 1rem Jost,sans-serif;text-decoration:none;cursor:pointer}
+.btn.alt{background:transparent;color:var(--leaf);box-shadow:inset 0 0 0 1.5px var(--leaf)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+:focus-visible{outline:3px solid var(--peony);outline-offset:2px}
+.serv{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:64px}
+.serv div{border-top:2px solid var(--peony);padding-top:14px}
+.serv p{color:var(--muted);margin:.4rem 0 0}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 24px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 16px;font:inherit;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--leaf);color:var(--on-leaf);border-color:var(--leaf)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.card .pic{background:var(--blush);padding:14px;display:flex;justify-content:center}
+.card .pic svg{width:96px;height:96px}
+.card .body{padding:14px 16px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
+.price{font-weight:500}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:start;margin:20px 0 40px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.row{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+.row .grow{flex:1;display:flex;flex-direction:column}
+.mut{color:var(--muted);font-size:.92rem}
+.mini{width:52px;height:52px;background:var(--blush);border-radius:12px;padding:6px}
+.qty{display:flex;align-items:center;gap:10px}
+.ib{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:1.1rem;cursor:pointer}
+.empty{color:var(--muted);padding:18px 0}
+.f{display:flex;flex-direction:column;gap:4px;margin-bottom:14px;font-size:.95rem}
+.f input,.f select,.f textarea{font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.tot{display:flex;justify-content:space-between;font-size:1.1rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.cal .h{text-align:center;color:var(--muted);font-size:.85rem}
+.day{aspect-ratio:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;font:inherit;cursor:pointer}
+.day:disabled{background:transparent;color:var(--muted);opacity:.5;cursor:not-allowed}
+.day.busy{background:var(--blush);text-decoration:line-through}
+.day.sel{background:var(--leaf);color:var(--on-leaf);border-color:var(--leaf)}
+.mnav{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.tabs{display:flex;gap:8px;margin-bottom:18px}
+.narrow{max-width:420px;margin:0 auto}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:.25s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.92rem}
+@media(max-width:760px){.hero,.two,.serv{grid-template-columns:1fr}.hero svg{max-width:300px}nav{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.pt{animation:none}.toast{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="brand" href="#inicio" id="logo"></a>
+<nav aria-label="Principal">
+<a href="#inicio">Início</a><a href="#catalogo">Catálogo</a><a href="#pedidos">Pedidos<span class="badge" id="cnt"></span></a><a href="#agenda">Agenda</a><a href="#contato">Contato</a><a href="#entrar" id="who">Entrar</a>
+</nav></div></header>
+<main><div class="wrap" id="app"></div></main>
+<footer><div class="wrap">Aurora Flores. Protótipo de projeto acadêmico, sem pedidos reais.</div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const $=s=>document.querySelector(s);
+const money=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const items=[
+{id:1,n:'Rosa vermelha',c:'Flores',p:9,d:'Haste de 60 cm, vendida por unidade.',a:'#c23b5a',b:'#f2c14e',k:10},
+{id:2,n:'Peônia rosa',c:'Flores',p:28,d:'Volumosa e perfumada, a favorita dos buquês.',a:'#e48fa8',b:'#f2c14e',k:14},
+{id:3,n:'Girassol',c:'Flores',p:12,d:'Alegria para festas ao ar livre e mesas rústicas.',a:'#f0b429',b:'#6b3f1d',k:14},
+{id:4,n:'Lisianthus branco',c:'Flores',p:14,d:'Delicado como uma rosa, dura mais na água.',a:'#efe6e6',b:'#b9cdbd',k:9},
+{id:5,n:'Hortênsia azul',c:'Flores',p:22,d:'Cachos fartos para preencher arranjos grandes.',a:'#7f9fd8',b:'#dfe8fa',k:12},
+{id:6,n:'Orquídea phalaenopsis',c:'Plantas',p:89,d:'Vaso pronto para presentear ou decorar o salão.',a:'#f3d1e4',b:'#c23b8a',k:5},
+{id:7,n:'Lavanda em vaso',c:'Plantas',p:24,d:'Perfume suave e lembrancinha bonita para convidados.',a:'#9b87d1',b:'#5a4a8a',k:8},
+{id:8,n:'Samambaia',c:'Plantas',p:35,d:'Folhagem exuberante para cantos e entradas.',a:'#4f8a64',b:'#2f6a47',k:10},
+{id:9,n:'Suculentas (kit com 3)',c:'Plantas',p:42,d:'Fáceis de cuidar, ótimas como lembrancinha.',a:'#8fb59a',b:'#d9728f',k:8},
+{id:10,n:'Buquê de noiva',c:'Decoração',p:220,d:'Feito sob medida, com as flores e cores do casamento.',a:'#f6d9de',b:'#e48fa8',k:9},
+{id:11,n:'Arranjo de mesa',c:'Decoração',p:130,d:'Centro de mesa com flores da estação e folhagens.',a:'#e48fa8',b:'#efe6e6',k:8},
+{id:12,n:'Arco floral',c:'Decoração',p:1450,d:'Arco para cerimônias, com montagem e retirada.',a:'#d9728f',b:'#f6d9de',k:11}];
+const booked=['2026-11-21','2026-11-28','2026-12-05','2026-12-12','2026-12-19','2026-12-31','2027-01-09','2027-01-16'];
+const now=new Date();
+let filt='Todas',user=null,cart={},ym={y:now.getFullYear(),m:now.getMonth()},sel=null,tab='in';
+function flower(a,b,n){let p='',rx=n>12?6:9;for(let i=0;i<n;i++)p+=`<ellipse cx="50" cy="28" rx="${rx}" ry="21" fill="${a}" transform="rotate(${i*360/n} 50 50)"/>`;return `<svg viewBox="0 0 100 100" aria-hidden="true">${p}<circle cx="50" cy="50" r="9" fill="${b}"/></svg>`}
+function bloom(){let s='';[[6,15,24,100,95,'#7fa98b'],[9,0,36,92,100,'#f2b8c6'],[9,20,28,74,126,'#e07a98'],[7,0,20,52,150,'#b84a6e']].forEach(([n,o,rx,ry,cy,f],r)=>{for(let i=0;i<n;i++)s+=`<g transform="rotate(${o+i*360/n} 200 200)"><ellipse class="pt" style="animation-delay:${(r*.18+i*.02).toFixed(2)}s" cx="200" cy="${cy}" rx="${rx}" ry="${ry}" fill="${f}"/></g>`});return `<svg viewBox="0 0 400 400" role="img" aria-label="Ilustração de uma flor desabrochando">${s}<circle cx="200" cy="200" r="24" fill="#f2c14e"/><circle cx="200" cy="200" r="10" fill="#c9922a"/></svg>`}
+const field=(l,n,t='text',x='')=>`<label class="f">${l}<input name="${n}" type="${t}" required ${x}></label>`;
+function vInicio(){return `<section class="hero"><div><h1>Seu grande dia, florido do altar à última mesa.</h1><p>Decoramos casamentos, aniversários e eventos com flores frescas, folhagens e arranjos feitos sob medida.</p><div class="acts"><a class="btn" href="#catalogo">Ver catálogo</a><a class="btn alt" href="#agenda">Agendar uma visita</a></div></div>${bloom()}</section>
+<section class="serv"><div><h3>Casamentos</h3><p>Buquê, arco da cerimônia, corredor e mesas, tudo na mesma paleta.</p></div><div><h3>Festas e aniversários</h3><p>Painéis, centros de mesa e lembrancinhas de plantas.</p></div><div><h3>Eventos corporativos</h3><p>Recepções e palcos decorados, com montagem e retirada.</p></div></section>`}
+function vCatalogo(){const cats=['Todas','Flores','Plantas','Decoração'];const l=items.filter(i=>filt=='Todas'||i.c==filt);
+return `<h1>Catálogo</h1><div class="chips" role="group" aria-label="Filtrar por tipo">${cats.map(c=>`<button class="chip" data-act="filt" data-id="${c}" aria-pressed="${c==filt}">${c}</button>`).join('')}</div><div class="grid">${l.map(i=>`<article class="card"><div class="pic">${flower(i.a,i.b,i.k)}</div><div class="body"><h3>${i.n}</h3><p>${i.d}</p><span class="price">${money(i.p)}</span><button class="btn" data-act="add" data-id="${i.id}">Adicionar ao pedido</button></div></article>`).join('')}</div>`}
+function vPedidos(){const ids=Object.keys(cart);const tot=ids.reduce((s,i)=>s+cart[i]*items.find(x=>x.id==i).p,0);
+const rows=ids.map(i=>{const it=items.find(x=>x.id==i);return `<div class="row"><div class="mini">${flower(it.a,it.b,it.k)}</div><div class="grow"><b>${it.n}</b><span class="mut">${money(it.p)} cada</span></div><div class="qty"><button class="ib" data-act="dec" data-id="${i}" aria-label="Diminuir ${it.n}">−</button><output>${cart[i]}</output><button class="ib" data-act="inc" data-id="${i}" aria-label="Aumentar ${it.n}">+</button></div></div>`}).join('');
+return `<h1>Meu pedido</h1><div class="two"><section>${rows||`<p class="empty">Seu pedido está vazio. <a href="#catalogo">Escolha itens no catálogo</a>.</p>`}</section><form class="panel" data-form="pedido"><h2>Finalizar pedido</h2>${field('Seu nome','nome')}${field('Data do evento','data','date')}<label class="f">Tipo de evento<select name="tipo"><option>Casamento</option><option>Aniversário</option><option>Evento corporativo</option><option>Outro</option></select></label><p class="tot"><span>Total estimado</span><b>${money(tot)}</b></p><button class="btn" ${ids.length?'':'disabled'}>Enviar pedido</button></form></div>
+<h2>Pedidos anteriores</h2><div class="scroll"><table><thead><tr><th>Nº</th><th>Evento</th><th>Data</th><th>Situação</th></tr></thead><tbody><tr><td>1042</td><td>Casamento de Marina e Caio</td><td>12/09/2026</td><td>Entregue</td></tr><tr><td>1051</td><td>Festa de 15 anos</td><td>03/10/2026</td><td>Entregue</td></tr><tr><td>1068</td><td>Jantar corporativo</td><td>28/10/2026</td><td>Em montagem</td></tr></tbody></table></div>`}
+function vAgenda(){const {y,m}=ym;const first=new Date(y,m,1).getDay(),n=new Date(y,m+1,0).getDate();const mes=new Date(y,m,1).toLocaleDateString('pt-BR',{month:'long',year:'numeric'});const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+let c=['D','S','T','Q','Q','S','S'].map(d=>`<div class="h">${d}</div>`).join('')+'<div></div>'.repeat(first);
+for(let d=1;d<=n;d++){const k=`${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;const past=new Date(y,m,d)<today,busy=booked.includes(k);
+c+=`<button class="day${busy?' busy':''}${sel==k?' sel':''}" data-act="day" data-id="${k}" ${past||busy?'disabled':''} aria-pressed="${sel==k}">${d}</button>`}
+return `<h1>Agenda</h1><p class="mut">Escolha uma data livre. Datas riscadas já têm evento marcado.</p><div class="two"><section class="panel"><div class="mnav"><button class="ib" data-act="mes" data-id="-1" aria-label="Mês anterior">‹</button><h3>${mes}</h3><button class="ib" data-act="mes" data-id="1" aria-label="Próximo mês">›</button></div><div class="cal">${c}</div></section>
+<form class="panel" data-form="agenda"><h2>Solicitar data</h2><p class="mut">${sel?'Data escolhida: '+sel.split('-').reverse().join('/'):'Nenhuma data escolhida.'}</p><label class="f">Tipo de evento<select name="tipo"><option>Visita para orçamento</option><option>Casamento</option><option>Festa</option><option>Evento corporativo</option></select></label><label class="f">Horário<select name="hora"><option>09:00</option><option>11:00</option><option>14:00</option><option>16:00</option></select></label>${field('Seu nome','nome')}${field('Telefone','tel','tel')}<button class="btn">Solicitar data</button></form></div>`}
+function vContato(){return `<h1>Contato</h1><div class="two"><form class="panel" data-form="contato"><h2>Envie uma mensagem</h2>${field('Nome','nome')}${field('E-mail','email','email')}<label class="f">Assunto<select name="assunto"><option>Orçamento</option><option>Dúvida sobre pedido</option><option>Parcerias</option></select></label><label class="f">Mensagem<textarea name="msg" rows="5" required></textarea></label><button class="btn">Enviar mensagem</button></form><section class="panel"><h2>Ateliê</h2><p>Rua das Acácias, 120<br>Centro</p><p>(75) 90000-0000<br>contato@auroraflores.example</p><p class="mut">Segunda a sábado, das 8h às 18h. Domingos só com agendamento.</p></section></div>`}
+function vEntrar(){if(user)return `<div class="panel narrow"><h2>Você está conectado</h2><p>Conta: ${esc(user)}</p><button class="btn" data-act="sair">Sair</button></div>`;const cad=tab=='cad';
+return `<div class="panel narrow"><div class="tabs"><button class="chip" data-act="tab" data-id="in" aria-pressed="${!cad}">Entrar</button><button class="chip" data-act="tab" data-id="cad" aria-pressed="${cad}">Criar conta</button></div><form data-form="login">${cad?field('Nome','nome'):''}${field('E-mail','email','email')}${field('Senha','senha','password','minlength="6"')}<button class="btn">${cad?'Criar conta':'Entrar'}</button></form></div>`}
+const views={inicio:vInicio,catalogo:vCatalogo,pedidos:vPedidos,agenda:vAgenda,contato:vContato,entrar:vEntrar};
+function render(){const v=views[location.hash.slice(1)]?location.hash.slice(1):'inicio';$('#app').innerHTML=views[v]();
+document.querySelectorAll('nav a').forEach(a=>a.getAttribute('href')=='#'+v?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));
+const q=Object.values(cart).reduce((s,x)=>s+x,0);$('#cnt').textContent=q||'';$('#who').textContent=user?'Minha conta':'Entrar'}
+let tt;function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>e.classList.remove('show'),2400)}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-act]');if(!t)return;const a=t.dataset.act,id=t.dataset.id;
+if(a=='add'){cart[id]=(cart[id]||0)+1;toast('Item adicionado ao pedido')}
+if(a=='inc')cart[id]++;
+if(a=='dec'){cart[id]--;if(cart[id]<1)delete cart[id]}
+if(a=='filt')filt=id;
+if(a=='day')sel=id;
+if(a=='mes'){ym.m+=+id;if(ym.m<0){ym.m=11;ym.y--}if(ym.m>11){ym.m=0;ym.y++}}
+if(a=='tab')tab=id;
+if(a=='sair'){user=null;toast('Você saiu da conta')}
+render()});
+document.addEventListener('submit',e=>{e.preventDefault();const f=e.target,k=f.dataset.form,d=Object.fromEntries(new FormData(f));
+if(k=='pedido'){
+    let txt = "Olá! Gostaria de fechar o seguinte pedido:\n";
+    for(let id in cart){
+        let it = items.find(x=>x.id==id);
+        txt += `- ${cart[id]}x ${it.n} (${money(it.p)})\n`;
+    }
+    txt += `Nome: ${d.nome}\nData do evento: ${d.data}\nTipo: ${d.tipo}`;
+    window.open(`https://wa.me/5575900000000?text=${encodeURIComponent(txt)}`, '_blank');
+    cart={};
+}
+if(k=='agenda'){if(!sel){toast('Escolha uma data no calendário');return}toast('Data solicitada');sel=null}
+if(k=='contato'){toast('Mensagem enviada');f.reset();return}
+if(k=='login'){user=d.nome||d.email.split('@')[0];tab='in';toast('Bem-vindo(a), '+user);location.hash='inicio'}
+render()});
+addEventListener('hashchange',()=>{render();scrollTo(0,0)});
+$('#logo').innerHTML=flower('#d9728f','#f2c14e',6)+'Aurora Flores';
+render();
+</script>
+</body>
+</html>
